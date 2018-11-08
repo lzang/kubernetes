@@ -2366,6 +2366,7 @@ function setup-netd-manifest {
     cat > "${netd_file}" <<EOF
 $CUSTOM_NETD_YAML
 EOF
+    update-prometheus-to-sd-parameters ${netd_file}
   fi
 }
 
